@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="imgOptimizado/logo_transparente_v2_1.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consultoría en Business Intelligence, Definimos estrategias de BI, desarrollamos dashboards y reportes automatizados para mejorar la toma de decisiones.">
+    <title>Data Bridge | Consultoría experta para convertir tus datos en ventajas competitivas</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+</head>
+
+<body>
+        <header class="menu">
+            <figure>
+                <img src="imgOptimizado/logo_transparente_v2_1.png" href="index.html" alt="Data Bridge">
+            </figure>
+            <div class="menu_hamburguesa">
+                <label class="hamburger">
+                    <input type="checkbox">
+                    <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                    <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+            </div>
+            <nav class="inactive nav-buttons-container">
+                <ul class="nav-group primary-group">
+                    <li><a href="index.html" class="nav-button primary">Inicio</a></li>
+                    <li>                        <a href="quienes_somos.html" class="nav-button info">Quiénes Somos</a></li>
+                    <li>                        <a href="quienes_somos.html#servicios" class="nav-button success">Servicios</a></li>
+                    <li>                        <a href="index.html" class="nav-button warning">Publicaciones</a></li>
+                    <li>                        <a href="#contactanos" class="nav-button blog">Contáctanos</a></li>
+                </ul>                
+            </nav>
+        </header>
+        <main>
+            <section class="hero-section">
+                <article class="hero-text-container">
+                    <h2 class="hero-title">Llevamos tu negocio a otro nivel al alcance de tu presupuesto.</h2>
+                    <p class="hero-text">Transformamos datos en decisiones estratégicas. 
+                        <span class="highlight">Potencia tu ventaja competitiva</span> con IA y analítica avanzada.
+                    </p>
+                    <div class="hero-subtext">
+                        Desde PyMEs hasta grandes corporaciones, optimizamos tu rendimiento con soluciones personalizadas de IA
+                    </div>
+                </article>
+                <article class="hero-visualization">
+                    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                    <dotlottie-player src="https://lottie.host/79fb3cea-8a78-4242-8788-8a127ca0de6b/oI3dWMmAjJ.lottie" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></dotlottie-player>
+                </article>
+            </section>
+            <section class="challenges-card">
+                <h2 class="challenges-title">¿Tu empresa tiene los siguientes desafíos?</h2>                
+                <article class="challenges-list">
+                    <div class="challenge-item">
+                        <div class="challenge-bullet">
+                            <span class="bullet-icon">📊</span>
+                        </div>
+                        <p class="challenge-text">Baja productividad y calidad de datos en la reportería</p>
+                    </div>
+                    
+                    <div class="challenge-item">
+                        <div class="challenge-bullet">
+                            <span class="bullet-icon">📉</span>
+                        </div>
+                        <p class="challenge-text">Análisis de bajo valor para la toma de decisiones</p>
+                    </div>
+                    
+                    <div class="challenge-item">
+                        <div class="challenge-bullet">
+                            <span class="bullet-icon">⚙️</span>
+                        </div>
+                        <p class="challenge-text">Carencia de automatización de procesos de información</p>
+                    </div>
+                    
+                    <div class="challenge-item">
+                        <div class="challenge-bullet">
+                            <span class="bullet-icon">🤖</span>
+                        </div>
+                        <p class="challenge-text">Necesidad de generar nuevas soluciones impulsadas por IA y analítica avanzada para rentabilizar el negocio</p>
+                    </div>
+                </article>
+            </section>
+            <section class="servicios">
+                <h2 class="blog-title">Portafolio Servicios</h2>
+                <article class="services-article">
+                    <button class="btn anterior" onclick="prevSlide()">◀</button>
+                    <button class="btn siguiente" onclick="nextSlide()">▶</button>
+                    <div class="slideContainer">
+                        <!-- Ciencia de Datos -->
+                        <div class="service-card data-science-card">
+                            <h3>Ciencia de Datos</h3>
+                            <p>Análisis estadístico avanzado y modelos predictivos personalizados para optimizar estrategias, mejorar la toma de decisiones y potenciar el crecimiento de su negocio.</p>
+                            <img src="imgOptimizado/data_science.jpg" alt="Ciencia de Datos">
+                        </div>
+            
+                        <!-- Business Intelligence -->
+                        <div class="service-card">
+                            <h3>Business Intelligence</h3>
+                            <p>Desarrollo de dashboards y herramientas de BI para una visualización de datos en tiempo real, facilitando el análisis, la optimización y la toma de decisiones estratégicas.</p>
+                            <img src="imgOptimizado/bi.jpg" alt="Business Intelligence" class="service-image">
+                        </div>
+            
+                        <!-- Consultoría -->
+                        <div class="service-card">
+                            <h3>Consultoría</h3>
+                            <p>Asesoramiento experto en estrategia de datos y gobierno de información para garantizar una gestión eficiente, segura y alineada con los objetivos de su negocio.</p>
+                            <img src="imgOptimizado//consultoria.jpg" alt="consultoria">
+                        </div>
+            
+                        <!-- Inteligencia Artificial para Empresas -->
+                        <div class="service-card">
+                            <h3>Inteligencia Artificial para Empresas</h3>
+                            <p>Implementación de soluciones de IA personalizadas para optimizar operaciones y aumentar la eficiencia en pequeñas y grandes empresas.</p>
+                            <img src="imgOptimizado/ai2.jpg" alt="IA para Empresas" class="service-image">
+                        </div>
+            
+                        <!-- Automatización de Procesos de Datos -->
+                        <div class="service-card">
+                            <h3>Automatización de Procesos de Datos</h3>
+                            <p>Automatiza tus flujos de trabajo de datos para reducir errores, aumentar la productividad y tomar decisiones basadas en datos en tiempo real.</p>
+                            <img src="imgOptimizado/automation.jpg" alt="Automatización de Datos" class="service-image">
+                        </div>
+            
+                        <!-- Capacitaciones en Ciencias de la Información -->
+                        <div class="service-card">
+                            <h3>Capacitaciones en Ciencias de la Información</h3>
+                            <p>Ofrecemos cursos y talleres para equipos que desean profundizar en técnicas avanzadas de análisis y ciencia de datos, aplicándolas a la toma de decisiones.</p>
+                            <img src="imgOptimizado/capacitacion.jpg" alt="Capacitaciones en Ciencias de la Información" class="service-image">
+                        </div>
+            
+                        <!-- Digitalización -->
+                        <div class="service-card">
+                            <h3>Digitalización</h3>
+                            <p>¿Tienes documentos físicos y videos que necesitas digitalizar? Nuestras herramientas avanzadas optimizan el proceso, garantizando mayor precisión y eficiencia.</p>
+                            <img src="imgOptimizado/digitalizacion.jpg" alt="Capacitaciones en Ciencias de la Información" class="service-image">
+                        </div>
+            
+                        <!-- Marketing Digital -->
+                        <div class="service-card">
+                            <h3>Marketing Digital</h3>
+                            <p>Capta nuevos clientes con una estrategia basada en el análisis de datos, optimizando el alcance y la efectividad en redes sociales y publicidad masiva para maximizar resultados y conversiones.</p>
+                            <img src="imgOptimizado/marketing.jpg" alt="Capacitaciones en Ciencias de la Información" class="service-image">
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="dashboard-container">
+                <h2>Dashboard de Rendimiento</h2>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <h3>Precisión Predictiva</h3>
+                        <div class="metric-value">95%</div>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Proyectos Completados</h3>
+                        <div class="metric-value">150+</div>
+                    </div>
+                    <div class="metric-card">
+                        <h3>Satisfacción Cliente</h3>
+                        <div class="metric-value">98%</div>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="performanceChart"></canvas>
+                </div>
+            </section>
+            <section class="predictive-models-widget">
+                <div class="widget-header">
+                    <h2>Modelos Predictivos</h2>
+                    <div class="refresh-button" onclick="updateModelMetrics()">
+                        <span>↻</span>
+                    </div>
+                </div>
+                
+                <div class="models-grid">
+                    <div class="model-card">
+                        <div class="model-icon">🎯</div>
+                        <h3>Predicción de Demanda</h3>
+                        <div class="accuracy-meter">
+                            <div class="accuracy-bar" style="width: 94%"></div>
+                            <span class="accuracy-value">94%</span>
+                        </div>
+                        <div class="model-stats">
+                            <div class="stat">
+                                <span class="stat-label">Precisión</span>
+                                <span class="stat-value">94%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">Recall</span>
+                                <span class="stat-value">92%</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="model-card">
+                        <div class="model-icon">📈</div>
+                        <h3>Análisis de Tendencias</h3>
+                        <div class="accuracy-meter">
+                            <div class="accuracy-bar" style="width: 91%"></div>
+                            <span class="accuracy-value">91%</span>
+                        </div>
+                        <div class="model-stats">
+                            <div class="stat">
+                                <span class="stat-label">RMSE</span>
+                                <span class="stat-value">0.08</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">MAE</span>
+                                <span class="stat-value">0.06</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="model-card">
+                        <div class="model-icon">🎲</div>
+                        <h3>Clasificación</h3>
+                        <div class="accuracy-meter">
+                            <div class="accuracy-bar" style="width: 96%"></div>
+                            <span class="accuracy-value">96%</span>
+                        </div>
+                        <div class="model-stats">
+                            <div class="stat">
+                                <span class="stat-label">F1-Score</span>
+                                <span class="stat-value">0.95</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">AUC</span>
+                                <span class="stat-value">0.97</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="blog-container">
+                <div class="blog-header">
+                    <h1 class="blog-title">Explora nuestros artículos sobre tecnología, innovación y transformación digital</h1>
+                <div class="blog-grid">
+                    <!-- Noticias de IA en Colombia -->
+                    <div class="blog-card">
+                        <h3>Noticias de IA en Colombia</h3>
+                        <p>Descubre cómo Colombia está avanzando en el campo de la Inteligencia Artificial y cuáles son los principales hitos alcanzados.</p>
+                         </div>
+    
+                    <!-- Implementación de la IA -->
+                    <div class="blog-card">
+                        <h3>Implementación de la IA</h3>
+                        <p>Conoce los casos de éxito y los desafíos de la implementación de soluciones de IA en diferentes sectores industriales en Colombia.</p>
+                    </div>
+    
+                    <!-- Tendencias de la IA -->
+                    <div class="blog-card">
+                        <h3>Tendencias de la IA</h3>
+                        <p>Explora las últimas tendencias en Inteligencia Artificial y cómo estas podrían influir en el futuro tecnológico de Colombia.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="contact-us" id="contactanos">
+                <h3 class="form-heading">Contáctanos</h3>
+                <article class="contact-article">
+                  <div class="contact-text">
+                    <h3>¿Listo para transformar los datos de tu empresa en oportunidades estratégicas? En <strong>Data Bridge</strong>, estamos aquí para ayudarte a dar el siguiente paso en la <strong>inteligencia de negocios y la automatización de datos</strong>.</h3>
+                    <h3>✨ <strong>Solicita una consulta gratuita y descubre cómo podemos ayudarte a potenciar tu negocio con datos.</strong></h3>
+                    <h3>Déjanos un mensaje</h3>
+                    <h3>Si tienes dudas o necesitas más información, completa el siguiente formulario y nos pondremos en contacto contigo en menos de 24 horas.</h3>
+                    <h3>💡 <strong>Tu éxito está en los datos. Déjanos ser tu aliado en esta transformación digital.</strong></h3>
+                    
+                  </div>
+                  <div class="form-card1">
+                    <div class="form-card2">
+                      <form class="form" id="contactForm">
+                        <label for="name">Nombre</label>
+                        <div class="form-field">
+                          <input required="" placeholder="Nombre" class="input-field" type="text" id="nombre" name="nombre" />
+                        </div>
+              
+                        <label for="correo">Correo</label>
+                        <div class="form-field">
+                          <input
+                            required="" placeholder="Correo" class="input-field" type="email" id="correo" name="correo"/>
+                        </div>
+              
+                        <label for="numero">Numero de Contacto</label>
+                        <div class="form-field">
+                          <input required="" placeholder="3201234567" class="input-field" type="tel" id="numero" name="numero" />
+                        </div>
+              
+                        <label for="compania"> Nombre de la Compañia</label>
+                        <div class="form-field">
+                          <input required="" placeholder="Empresas S.A" class="input-field" type="text" id="compania" name="compania"/>
+                        </div>
+              
+                        <label for="Cargo">Rol/ Cargo</label>
+                        <div class="form-field">
+                          <input
+                            required=""
+                            placeholder="Subject"
+                            class="input-field"
+                            type="text" id="rol" name="rol"
+                          />
+                        </div>
+              
+                        <label for="reto">¿Cuál es mi Reto?</label>
+                        <div class="form-field">
+                          <textarea
+                            required=""
+                            placeholder="Message"
+                            cols="30"
+                            rows="4"
+                            class="input-field"
+                            id="reto" name="reto"
+                          ></textarea>
+                        </div>
+              
+                        <!-- Campo oculto para la fecha y hora -->
+                        <input type="hidden" id="fechaHora" name="fechaHora">
+              
+                        <button class="sendMessage-btn">Enviar</button>
+                      </form>
+                    </div>
+                  </div>
+                </article>
+              </section>
+        </main>
+        <div class="whatsapp-widget">
+            <div class="widget-preview">
+                <span class="preview-text">Impulsa tu negocio con soluciones rentables</span>
+                <span class="preview-close" onclick="closePreview()">×</span>
+            </div>
+            <a href="https://wa.me/573195203188?text=Hola,%20me%20gustaría%20agendar%20una%20asesoría" 
+               target="_blank" 
+               class="whatsapp-button">
+                <div class="button-content">
+                    <div class="whatsapp-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z"/>
+                        </svg>
+                    </div>
+                    <span class="button-text">Agendar Asesoría Gratuita</span>
+                </div>
+            </a>
+        </div>
+    
+        <footer class="footer-container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <img src="imgOptimizado/logo_transparente_v3_sin_titulo.png" alt="FOX Logo" class="footer-logo">
+                    <div class="footer-info">
+                        <p>Bogotá, Colombia</p>
+                        <p>Dirección: Cra37a # 11 10 sur.</p>
+                        <p>Celular: 319-520-3188</p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <a href="politica_privacidad.html" class="privacy-policy">Política de Privacidad y Tratamiento de Datos</a>
+                    <ul class="social-icons">
+                            <li><a href="mailto:"><img src="imgOptimizado/email2.png" alt="Icono de Mail"></a></li>
+                            <li><a href="" target="_blank"><img src="imgOptimizado/facebook.png" alt="Icono de Facebook"></a></li>
+                            <li><a href="" target="_blank"><img src="imgOptimizado/Linkedin.png" alt="Logo de Linkedin"></a></li>                    
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="/Js/index.js" defer></script>
+</body>
+</html>

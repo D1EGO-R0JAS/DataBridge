@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="imgOptimizado/logo_transparente_v2_1.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consultoría en Business Intelligence, Definimos estrategias de BI, desarrollamos dashboards y reportes automatizados para mejorar la toma de decisiones.">
+    <title>Data Bridge | Consultoría experta para convertir tus datos en ventajas competitivas</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/quienes_somos.css">
+</head>
+<body>
+    <header class="menu">
+        <figure>
+            <img src="imgOptimizado/logo_transparente_v2_1.png" href="index.html" alt="Data Bridge">
+        </figure>
+        <div class="menu_hamburguesa">
+            <label class="hamburger">
+                <input type="checkbox">
+                <svg viewBox="0 0 32 32">
+                <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+        </div>
+        <nav class="inactive nav-buttons-container">
+            <ul class="nav-group primary-group">
+                <li><a href="index.html" class="nav-button primary">Inicio</a></li>
+                <li><a href="quienes_somos.html" class="nav-button info">Quiénes Somos</a></li>
+                <li><a href="#servicios" class="nav-button success">Servicios</a></li>
+                <li><a href="index.html" class="nav-button warning">Publicaciones</a></li>
+                <li><a href="index.html#contactanos" class="nav-button blog">Contáctanos</a></li>
+            </ul>                
+        </nav>
+    </header>
+    <main>
+        <section class="quienes-somos">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-text-container">
+                        <h1 class="hero-title">¿Quiénes Somos?</h1>
+                        <p class="hero-text">
+                            En Data Bridge, transformamos los datos en decisiones estratégicas. Somos una startup con sede en Bogotá D.C., especializada en Ciencia de Datos y Business Intelligence, dedicada a brindar soluciones innovadoras y accesibles para pequeñas y medianas empresas.
+                        </p>
+                        <p class="hero-text">
+                            Nos enfocamos en ayudar a empresas que aún no han explorado el potencial de sus datos, proporcionando herramientas tecnológicas avanzadas para que puedan competir en un entorno digital. A través del uso de tecnología open source, modelos predictivos, reportes dinámicos y automatización de procesos, convertimos la complejidad del análisis de datos en información clara y útil.
+                        </p>
+                    </div>
+                    <div class="hero-visualization">
+                        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                        <dotlottie-player src="https://lottie.host/3e627522-6fb5-4751-9aad-ec62d5f68382/wBiRT8uNx3.lottie" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></dotlottie-player>
+                    </div>
+                </div>
+            </div>
+
+            <div class="challenges-card">
+                <div class="challenges-header">
+                    <h2 class="challenges-title">✨ ¿Qué nos diferencia?</h2>
+                </div>
+                <div class="challenges-list">
+                    <div class="challenge-item">
+                        <div class="challenge-bullet"><span class="bullet-icon">🚀</span></div>
+                        <p class="challenge-text">Enfoque personalizado → Adaptamos nuestras soluciones a las necesidades de cada negocio.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <div class="challenge-bullet"><span class="bullet-icon">🔍</span></div>
+                        <p class="challenge-text">Tecnología Open Source → Implementamos herramientas sin costos de licencia para mayor rentabilidad.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <div class="challenge-bullet"><span class="bullet-icon">📊</span></div>
+                        <p class="challenge-text">Resultados accionables → Convertimos datos complejos en información estratégica.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <div class="challenge-bullet"><span class="bullet-icon">🤖</span></div>
+                        <p class="challenge-text">Automatización Inteligente → Optimizamos procesos con BI, chatbots y minería de datos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="servicios" id="servicios">
+            <h2>Nuestros Servicos</h2>
+            <article class="services_section">
+                <div class="container_services">
+                    <div class="menu_services">
+                        <div onclick="showService(0)">Consultoría en Business Intelligence (BI)</div>
+                        <div onclick="showService(1)">Inteligencia Artificial para Empresas</div>
+                        <div onclick="showService(2)">Agentes de inteligencia artificial (IA)</div>
+                        <div onclick="showService(3)">Automatización de procesos de Datos</div>
+                        <div onclick="showService(4)">Capacitaciones en Business Intelligence y Ciencia de Datos</div>
+                        <div onclick="showService(5)">Digitalización y Transformación Digital</div>
+                        <div onclick="showService(6)">Marketing Digital Basado en Datos</div>
+                    </div>
+                    <div class="content_services" id="service-info">
+                        <h2>Selecciona un servicio</h2>
+                        <p>Haz clic en una categoría para ver más información.</p>
+                    </div>
+                </div>
+            </article>            
+        </section>
+        <div class="whatsapp-widget">
+            <div class="widget-preview">
+                <span class="preview-text">Impulsa tu negocio con soluciones rentables</span>
+                <span class="preview-close" onclick="closePreview()">×</span>
+            </div>
+            <a href="https://wa.me/573195203188?text=Hola,%20me%20gustaría%20agendar%20una%20asesoría" 
+               target="_blank" 
+               class="whatsapp-button">
+                <div class="button-content">
+                    <div class="whatsapp-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z"/>
+                        </svg>
+                    </div>
+                    <span class="button-text">Agendar Asesoría Gratuita</span>
+                </div>
+            </a>
+        </div>
+    </main>
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="imgOptimizado/logo_transparente_v3_sin_titulo.png" alt="FOX Logo" class="footer-logo">
+                <div class="footer-info">
+                    <p>Bogotá, Colombia</p>
+                    <p>Dirección: Cra37a # 11 10 sur.</p>
+                    <p>Celular: 319-520-3188</p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <a href="politica_privacidad.html" class="privacy-policy">Política de Privacidad y Tratamiento de Datos</a>
+                <ul class="social-icons">
+                        <li><a href="mailto:"><img src="imgOptimizado/email2.png" alt="Icono de Mail"></a></li>
+                        <li><a href="" target="_blank"><img src="imgOptimizado/facebook.png" alt="Icono de Facebook"></a></li>
+                        <li><a href="" target="_blank"><img src="imgOptimizado/Linkedin.png" alt="Logo de Linkedin"></a></li>                    
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="/Js/quines_somos.js" defer></script>
+</body>
+</html>
