@@ -7,11 +7,9 @@
     <meta name="description" content="Consultoría en Business Intelligence, Definimos estrategias de BI, desarrollamos dashboards y reportes automatizados para mejorar la toma de decisiones.">
     <title>Data Bridge | Consultoría experta para convertir tus datos en ventajas competitivas</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js" defer></script>
+
 </head>
 
 <body>
@@ -96,60 +94,85 @@
                         <div class="service-card data-science-card">
                             <h3>Ciencia de Datos</h3>
                             <p>Análisis estadístico avanzado y modelos predictivos personalizados para optimizar estrategias, mejorar la toma de decisiones y potenciar el crecimiento de su negocio.</p>
-                            <img src="imgOptimizado/data_science.jpg" alt="Ciencia de Datos">
+                            <picture>
+                                <source srcset="imgOptimizado/data_science.webp" type="image/webp">
+                                <img src="imgOptimizado/data_science.jpg" alt="Ciencia de Datos">
+                            </picture>
                         </div>
             
                         <!-- Business Intelligence -->
                         <div class="service-card">
                             <h3>Business Intelligence</h3>
                             <p>Desarrollo de dashboards y herramientas de BI para una visualización de datos en tiempo real, facilitando el análisis, la optimización y la toma de decisiones estratégicas.</p>
-                            <img src="imgOptimizado/bi.jpg" alt="Business Intelligence" class="service-image">
+                            <picture>
+                                <source srcset="imgOptimizado/bi.webp" type="image/webp">
+                                <img src="imgOptimizado/bi.jpg" alt="Business Intelligence">
+                            </picture>
                         </div>
             
                         <!-- Consultoría -->
                         <div class="service-card">
                             <h3>Consultoría</h3>
                             <p>Asesoramiento experto en estrategia de datos y gobierno de información para garantizar una gestión eficiente, segura y alineada con los objetivos de su negocio.</p>
-                            <img src="imgOptimizado//consultoria.jpg" alt="consultoria">
+                            <picture>
+                                <source srcset="imgOptimizado/consultoria.webp" type="image/webp">
+                                <img src="imgOptimizado/consultoria.jpg" alt="Consultoría">
+                            </picture>
                         </div>
             
                         <!-- Inteligencia Artificial para Empresas -->
                         <div class="service-card">
                             <h3>Inteligencia Artificial para Empresas</h3>
                             <p>Implementación de soluciones de IA personalizadas para optimizar operaciones y aumentar la eficiencia en pequeñas y grandes empresas.</p>
-                            <img src="imgOptimizado/ai2.jpg" alt="IA para Empresas" class="service-image">
+                            <picture>
+                                <source srcset="imgOptimizado/ai2.webp" type="image/webp">
+                                <img src="imgOptimizado/ai2.jpg" alt="IA para Empresas">
+                            </picture>
                         </div>
             
                         <!-- Automatización de Procesos de Datos -->
                         <div class="service-card">
                             <h3>Automatización de Procesos de Datos</h3>
                             <p>Automatiza tus flujos de trabajo de datos para reducir errores, aumentar la productividad y tomar decisiones basadas en datos en tiempo real.</p>
-                            <img src="imgOptimizado/automation.jpg" alt="Automatización de Datos" class="service-image">
+                            <picture>
+                                <source srcset="imgOptimizado/automation.webp" type="image/webp">
+                                <img src="imgOptimizado/automation.jpg" alt="Automatización de Datos">
+                            </picture>
                         </div>
             
                         <!-- Capacitaciones en Ciencias de la Información -->
                         <div class="service-card">
                             <h3>Capacitaciones en Ciencias de la Información</h3>
                             <p>Ofrecemos cursos y talleres para equipos que desean profundizar en técnicas avanzadas de análisis y ciencia de datos, aplicándolas a la toma de decisiones.</p>
-                            <img src="imgOptimizado/capacitacion.jpg" alt="Capacitaciones en Ciencias de la Información" class="service-image">
+                            <picture>
+                                <source srcset="imgOptimizado/capacitacion.webp" type="image/webp">
+                                <img src="imgOptimizado/capacitacion.jpg" alt="Capacitaciones en Ciencias de la Información">
+                            </picture>
                         </div>
             
                         <!-- Digitalización -->
                         <div class="service-card">
                             <h3>Digitalización</h3>
                             <p>¿Tienes documentos físicos y videos que necesitas digitalizar? Nuestras herramientas avanzadas optimizan el proceso, garantizando mayor precisión y eficiencia.</p>
-                            <img src="imgOptimizado/digitalizacion.jpg" alt="Capacitaciones en Ciencias de la Información" class="service-image">
+                            <picture>
+                                <source srcset="imgOptimizado/digitalizacion.webp" type="image/webp">
+                                <img src="imgOptimizado/digitalizacion.jpg" alt="Digitalización">
+                            </picture>
                         </div>
             
                         <!-- Marketing Digital -->
                         <div class="service-card">
                             <h3>Marketing Digital</h3>
                             <p>Capta nuevos clientes con una estrategia basada en el análisis de datos, optimizando el alcance y la efectividad en redes sociales y publicidad masiva para maximizar resultados y conversiones.</p>
-                            <img src="imgOptimizado/marketing.jpg" alt="Capacitaciones en Ciencias de la Información" class="service-image">
+                            <picture>
+                                <source srcset="imgOptimizado/marketing.webp" type="image/webp">
+                                <img src="imgOptimizado/marketing.jpg" alt="Marketing Digital">
+                            </picture>
                         </div>
                     </div>
                 </article>
             </section>
+            
             <section class="dashboard-container">
                 <h2>Dashboard de Rendimiento</h2>
                 <div class="metrics-grid">
@@ -349,7 +372,7 @@
         <footer class="footer-container">
             <div class="footer-content">
                 <div class="footer-left">
-                    <img src="imgOptimizado/logo_transparente_v3_sin_titulo.png" alt="FOX Logo" class="footer-logo">
+                    <img src="imgOptimizado/logo_transparente_v3_sin_titulo.png" alt="DataBridge Logo" class="footer-logo">
                     <div class="footer-info">
                         <p>Bogotá, Colombia</p>
                         <p>Dirección: Cra37a # 11 10 sur.</p>

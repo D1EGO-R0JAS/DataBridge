@@ -4,6 +4,11 @@
  box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "DM Sans";
+    src: url(fonts/DMSans-Regular.ttf);
+}
+
 :root {
     --primary-color: #f4fcfd; /* Azul claro */
     --secondary-color: #140f94; /* Azul más oscuro */
@@ -57,7 +62,8 @@ a{
 }
 
 .menu figure img{
-    width: 100%;
+    width: 100px;   
+    height: 100px; 
 }
 
 /**Menu Hamburguesa **/
@@ -799,7 +805,7 @@ a{
 
 .footer-logo {
     width: 100px;
-    height: auto;
+    height: 88px;
     margin-bottom: 10px;
 }
 
