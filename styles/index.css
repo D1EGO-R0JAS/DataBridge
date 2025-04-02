@@ -160,7 +160,7 @@ a{
 }
 
 .hero-title {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 600;
     margin-bottom: 15px;
     background: linear-gradient(45deg, var(--accent-color), #353799);
