@@ -80,6 +80,7 @@ interval(); // Inicia el auto-scroll
 /** Chart */
 
 // Configuración del gráfico
+/*
 const ctx = document.getElementById('performanceChart').getContext('2d');
 new Chart(ctx, {
     type: 'line',
@@ -126,6 +127,55 @@ new Chart(ctx, {
         }
     }
 });
+*/
+// Configuración del gráfico
+const ctx = document.getElementById('performanceChart').getContext('2d');
+new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'],
+        datasets: [{
+            label: 'Rendimiento Predictivo',
+            data: [92, 93, 95, 94, 96, 95],
+            borderColor: '#64FFDA',
+            tension: 0.4,
+            fill: true,
+            backgroundColor: 'rgba(100, 255, 218, 0.1)'
+        }]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                display: false
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: false,
+                min: 90,
+                max: 100,
+                grid: {
+                    color: 'rgba(255, 255, 255, 0.1)'
+                },
+                ticks: {
+                    color: '#8892B0'
+                }
+            },
+            x: {
+                grid: {
+                    color: 'rgba(255, 255, 255, 0.1)',
+                    borderColor: 'rgba(255, 255, 255, 0.1)'
+                },
+                ticks: {
+                    color: '#8892B0'
+                }
+            }
+        }
+    }
+});
+
 
 document.getElementById("contactForm").addEventListener("submit", function(e) {
     e.preventDefault();
