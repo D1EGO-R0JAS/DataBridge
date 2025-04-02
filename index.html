@@ -15,8 +15,11 @@
 <body>
         <header class="menu">
             <figure>
-                <img src="imgOptimizado/logo_transparente_v2_1.png" href="index.html" alt="Data Bridge">
-            </figure>
+                <picture>
+                    <source srcset="imgOptimizado/logo_transparente_v2_1.webp" type="image/webp">
+                    <img src="imgOptimizado/logo_transparente_v2_1.png" href="index.html" alt="Data Bridge">
+                </picture>
+            </figure>            
             <div class="menu_hamburguesa">
                 <label class="hamburger">
                     <input type="checkbox">
@@ -382,11 +385,32 @@
                 <div class="footer-right">
                     <a href="politica_privacidad.html" class="privacy-policy">Política de Privacidad y Tratamiento de Datos</a>
                     <ul class="social-icons">
-                            <li><a href="mailto:"><img src="imgOptimizado/email2.png" alt="Icono de Mail"></a></li>
-                            <li><a href="" target="_blank"><img src="imgOptimizado/facebook.png" alt="Icono de Facebook"></a></li>
-                            <li><a href="" target="_blank"><img src="imgOptimizado/Linkedin.png" alt="Logo de Linkedin"></a></li>                    
+                        <li>
+                            <a href="mailto:">
+                                <picture>
+                                    <source srcset="imgOptimizado/email2.webp" type="image/webp">
+                                    <img src="imgOptimizado/email2.png" alt="Icono de Mail">
+                                </picture>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank">
+                                <picture>
+                                    <source srcset="imgOptimizado/facebook.webp" type="image/webp">
+                                    <img src="imgOptimizado/facebook.png" alt="Icono de Facebook">
+                                </picture>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank">
+                                <picture>
+                                    <source srcset="imgOptimizado/Linkedin.webp" type="image/webp">
+                                    <img src="imgOptimizado/Linkedin.png" alt="Logo de Linkedin">
+                                </picture>
+                            </a>
+                        </li>
                     </ul>
-                </div>
+                </div>                
             </div>
         </footer>
         <script src="Js/index.js" defer></script>

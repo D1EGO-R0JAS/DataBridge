@@ -7,6 +7,7 @@
 @font-face {
     font-family: "DM Sans";
     src: url(fonts/DMSans-Regular.ttf);
+    font-display: swap;
 }
 
 :root {
